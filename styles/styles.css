@@ -1,0 +1,71 @@
+/* Import de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* variáveis */
+:root{
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(212, 45%, 89%);
+    --greyish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+
+    --outfit: 'Outfit', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    min-width: 1024px;
+    max-width: 1440px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: var(--light-grey);
+
+    font-family: var(--outfit);
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* card do qr code */
+.card {
+    width: 20vw;
+    min-width: 352px;
+    min-height: 546.19px;
+    padding: 1.2em;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+/* qr code */
+.card__figure{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 1.2em;
+}
+.card__figure img {
+    width: 100%;
+    border-radius: 10px;
+}
+/* titulo e texto */
+.card__title {
+    width: 100%;
+    font-size: 25px;
+   
+    margin: 0 auto;
+    margin-bottom: .8em;
+    color: var(--dark-blue);
+}
+.card__text {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 15px;
+    padding: 0 2em;
+    margin-bottom: 2em;
+    color: var(--greyish-blue);
+}
